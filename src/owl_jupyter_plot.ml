@@ -10,5 +10,6 @@ let output h =
   let temp_plot = Filename.temp_file "plot_" ".png" in
   set_output h temp_plot;
   output h;
+  set_output h "";
   let plot_str = Owl_io.read_file_string temp_plot in
   Jupyter_notebook.display ~base64:true "image/png" plot_str
