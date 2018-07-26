@@ -7,9 +7,16 @@ include Owl_plot
 
 
 let output h =
-  let temp_plot = Filename.temp_file "plot_" ".png" in
-  set_output h temp_plot;
+  let new_output = Filename.temp_file "plot_" ".png" in
+  (* set the old_output to new_output if it is not set *)
+  let old_output =
+    if get_output h <> "" then get_output h
+    else new_output
+  in
+  (* plot then reset the output *)
+  set_output h new_output;
   output h;
-  set_output h "";
-  let plot_str = Owl_io.read_file_string temp_plot in
-  Jupyter_notebook.display ~base64:true "image/png" plot_str
+  set_output h old_output;
+  (* render in the notebook *)
+  Jupyter_notebook.display_file ~base64:true "image/png" new_output
+  |> ignore
