@@ -1,14 +1,12 @@
-(jbuild_version 1)
-
-(library (
+(library
   (name owl_jupyter)
   (public_name owl-jupyter)
   (wrapped false)
-  (modes (byte))
+  (modes byte)
   (flags (:standard -safe-string))
-  (libraries (
+  (libraries
     owl-top
     jupyter
     jupyter.notebook
-  ))
-))
+  )
+)

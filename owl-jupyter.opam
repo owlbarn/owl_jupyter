@@ -8,14 +8,14 @@ bug-reports: "https://github.com/owlbarn/owl_jupyter/issues"
 doc: "https://owlbarn.github.io/"
 
 build: [
-  [ "jbuilder" "subst" "-n" name ] {pinned}
-  [ "jbuilder" "build" "-p" name "-j" jobs ]
+  [ "dune" "subst" "-n" name ] {pinned}
+  [ "dune" "build" "-p" name "-j" jobs ]
 ]
 
 depends: [
   "owl-top"
   "jupyter"
-  "jbuilder" {build}
+  "dune" {build}
 ]
 
 available: [ ocaml-version >= "4.06.0" ]
