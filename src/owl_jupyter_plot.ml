@@ -7,7 +7,7 @@ include Owl_plot
 
 
 let output h =
-  let new_output = Filename.temp_file "plot_" ".png" in
+  let new_output = Filename.temp_file "plot_" ".pngcairo" in
   (* set the old_output to new_output if it is not set *)
   let old_output =
     if get_output h <> "" then get_output h
