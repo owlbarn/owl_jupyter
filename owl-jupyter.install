@@ -1,0 +1,16 @@
+lib: [
+  "_build/install/default/lib/owl-jupyter/META"
+  "_build/install/default/lib/owl-jupyter/dune-package"
+  "_build/install/default/lib/owl-jupyter/opam"
+  "_build/install/default/lib/owl-jupyter/owl_jupyter.cma"
+  "_build/install/default/lib/owl-jupyter/owl_jupyter.cmi"
+  "_build/install/default/lib/owl-jupyter/owl_jupyter.cmt"
+  "_build/install/default/lib/owl-jupyter/owl_jupyter.ml"
+  "_build/install/default/lib/owl-jupyter/owl_jupyter_plot.cmi"
+  "_build/install/default/lib/owl-jupyter/owl_jupyter_plot.cmt"
+  "_build/install/default/lib/owl-jupyter/owl_jupyter_plot.ml"
+]
+doc: [
+  "_build/install/default/doc/owl-jupyter/LICENSE"
+  "_build/install/default/doc/owl-jupyter/README.md"
+]
