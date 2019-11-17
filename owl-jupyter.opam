@@ -5,7 +5,7 @@ license: "MIT"
 homepage: "https://github.com/owlbarn/owl_jupyter"
 dev-repo: "git+https://github.com/owlbarn/owl_jupyter.git"
 bug-reports: "https://github.com/owlbarn/owl_jupyter/issues"
-doc: "https://owlbarn.github.io/owl/"
+doc: "https://owlbarn.github.io/owl_jupyter/"
 synopsis: "Owl - Jupyter Wrappter"
 description: """
 Owl-Jupyter is Owl's wrappter on Jupyter Notebook.
