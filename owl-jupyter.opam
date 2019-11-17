@@ -13,7 +13,6 @@ Owl-Jupyter is Owl's wrappter on Jupyter Notebook.
 
 
 build: [
-  [ "dune" "subst" "-n" name ] {pinned}
   [ "dune" "build" "-p" name "-j" jobs ]
 ]
 
