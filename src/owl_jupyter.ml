@@ -4,4 +4,6 @@
  *)
 
 
+include Owl
+
 module Plot = Owl_jupyter_plot
