@@ -36,5 +36,5 @@ cleanall:
 
 .PHONY: push
 push:
-	git commit -am "coding onnx converter ..." && \
+	git commit -am "coding owl jupyter ..." && \
 	git push origin `git branch | grep \* | cut -d ' ' -f2`
