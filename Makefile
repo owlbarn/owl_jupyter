@@ -33,3 +33,8 @@ doc:
 cleanall:
 	dune uninstall && dune clean
 	$(RM) -r $(find . -name .merlin)
+
+.PHONY: push
+push:
+	git commit -am "coding onnx converter ..." && \
+	git push origin `git branch | grep \* | cut -d ' ' -f2`
