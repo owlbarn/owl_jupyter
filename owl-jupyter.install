@@ -11,6 +11,7 @@ lib: [
   "_build/install/default/lib/owl-jupyter/owl_jupyter_plot.ml"
 ]
 doc: [
+  "_build/install/default/doc/owl-jupyter/CHANGES"
   "_build/install/default/doc/owl-jupyter/LICENSE"
   "_build/install/default/doc/owl-jupyter/README.md"
 ]
